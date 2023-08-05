@@ -1,8 +1,2 @@
-<<<<<<< HEAD
 #!/bin/bash
-echo "Absolute path of the current working directory:"
-readlink -f .
-=======
-#!/bin/bash current_dir=$(pwd)
-echo "Absolute path of current working directory:" echo "$current_dir"
->>>>>>> e756db7b91d1c5845ce8ddcba24c7aa7c5c3f335
+pwd
