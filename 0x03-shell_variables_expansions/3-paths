@@ -1,0 +1,2 @@
+#!/bin/badh
+echo "$PATH" | tr ':' '\n' | wc -l
