@@ -1,18 +1,2 @@
 #!/bin/bash
-
-# Check if the /tmp/u directory exists, create it if not
-if [ ! -d "/tmp/u" ]; then
-    mkdir -p /tmp/u
-fi
-
-# Loop through files in the current directory
-for file in *; do
-    # Check if the file is a regular file and its name starts with an uppercase letter
-    if [ -f "$file" ] && [[ "$file" =~ ^[A-Z] ]]; then
-        # Move the file to /tmp/u directory
-        mv "$file" /tmp/u/
-        echo "Moved $file to /tmp/u/"
-    fi
-done
-
-echo "Finished moving files."
+mkdir -p /tmp/u; for f in *[A-Z]; do mv $f /tmp/u/ && echo "Moved $f"; done
