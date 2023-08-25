@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir -p /tmp/u; for f in *[A-Z]; do mv $f /tmp/u/ && echo "Moved $f"; done
+mv [A-Z]* /tmp/u
